@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0" />
+          <title>Document</title>
+          <style>
+               * {
+                    padding: 0%;
+                    margin: 0%;
+                    box-sizing: border-box;
+               }
+               .contaner {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    /* gap: 50px; */
+                    /* border: 1px solid red; */
+               }
+               .div_1 {
+                    width: 50%;
+                    /* border: 1px solid black; */
+               }
+
+               .div_2 {
+                    width: 50%;
+                    /* border: 1px solid blue; */
+               }
+
+               .td {
+                    width: 35%;
+                    border: 1px solid gray;
+                    background-color: #e0e6ff;
+                    font-size: 12px;
+                    padding: 2px;
+                    border: none;
+               }
+               .td_age {
+                    width: 20%;
+                    border: 1px solid gray;
+                    background-color: #e0e6ff;
+                    font-size: 12px;
+                    padding: 2px;
+                    border: none;
+               }
+               .table_1 {
+                    margin: 10px;
+                    width: 100%;
+               }
+               .table_1 tr td input[type="text"][type="select"] {
+                    border-color: #a3bfe3;
+                    outline: none !important;
+                    /* border: 05px solid #a3bfe3; */
+               }
+               /* .table_1 tr td {
+                    border: none;
+                    outline: none !important;
+               } */
+               .select_gen {
+                    width: 150px;
+                    padding: 2px;
+               }
+               .shege_btn {
+                    padding: 0 5px;
+                    color: #053573;
+               }
+               .table_2 {
+                    width: 80%;
+                    background-color: #2b6ac1;
+                    margin: 20px;
+                    color: white;
+                    font-size: 12px;
+               }
+               .table_2 tr td {
+                    /* border-right: 1px solid white; */
+                    padding: 1px;
+               }
+               .table_3 {
+                    margin: 20px;
+                    width: 100%;
+               }
+               .age {
+                    margin: 0 0 0 20px;
+                    background-color: #b9b9b9;
+                    color: #fff;
+                    padding: 5px 19px;
+                    border-radius: 6px;
+                    border: none;
+                    outline: none;
+               }
+               .table_4 {
+                    margin: 10px 0 0 20px;
+                    width: 100%;
+               }
+               .table_5 {
+                    width: 40%;
+                    margin: 70px 0 0 20px;
+                    width: 100%;
+               }
+               .black_btn {
+                    color: #13376c;
+                    float: right;
+                    margin: 30px 20px 20px 0;
+               }
+
+               /* @media screen and (min-width:"220px") and (max-width:"440px") {
+                .contaner{
+                    width: 100%;
+                    display: block;
+                }
+
+               } */
+
+               @media only screen and (max-width: 800px) {
+                    .contaner {
+                         display: block;
+                    }
+                    .div_1{
+                        width: 100%;
+                    }
+                    .div_2{
+                        width: 100%;
+                    }
+               }
+          </style>
+     </head>
+     <body>
+          <div class="contaner">
+               <div class="div_1">
+                    <table class="table_1">
+                         <tr>
+                              <td class="td">
+                                   <p>लिंग<span style="color: red">*</span></p>
+                              </td>
+                              <td>
+                                   <select class="select_gen">
+                                        <option value="">-----चयन-----</option>
+                                        <option value="">अज्ञात</option>
+                                        <option value="">पुरुष</option>
+                                        <option value="">महिला</option>
+                                        <option value="">
+                                             हिजड़ा/किन्&zwj;नर
+                                        </option>
+                                   </select>
+                              </td>
+                         </tr>
+
+                         <tr>
+                              <td class="td">
+                                   <p>
+                                        प्रथम नाम<span style="color: red"
+                                             >*</span
+                                        >
+                                   </p>
+                              </td>
+                              <td>
+                                   <input type="text" />
+                              </td>
+                         </tr>
+
+                         <tr>
+                              <td class="td">
+                                   <p>मध्य नाम</p>
+                              </td>
+                              <td>
+                                   <input type="text" />
+                              </td>
+                         </tr>
+
+                         <tr>
+                              <td class="td">
+                                   <p>अंतिम नाम</p>
+                              </td>
+                              <td>
+                                   <input type="text" />
+                              </td>
+                         </tr>
+
+                         <tr>
+                              <td class="td">
+                                   <p>उपनाम</p>
+                              </td>
+                              <td>
+                                   <input
+                                        style="width: 200px"
+                                        type="text" />&nbsp;&nbsp;<button
+                                        class="shege_btn">
+                                        सहेजे
+                                   </button>
+                              </td>
+                         </tr>
+                    </table>
+
+                    <table class="table_2">
+                         <thead>
+                              <tr>
+                                   <td>क्र.सं</td>
+                                   <td
+                                        style="
+                                             width: 80%;
+                                             border-left: 1px solid white;
+                                             border-right: 1px solid white;
+                                        ">
+                                        उपनाम
+                                   </td>
+                                   <td>हटाएँ</td>
+                              </tr>
+                         </thead>
+                    </table>
+
+                    <table class="table_3">
+                         <tr>
+                              <td class="td">
+                                   <p>संबंध प्रकार</p>
+                              </td>
+                              <td>
+                                   <select class="select_gen">
+                                        <option value="">-----चयन-----</option>
+                                        <option value="">संबंध प्रकार</option>
+                                        <option value="">अभिभावक</option>
+                                        <option value="">पति</option>
+                                        <option value="">पत्नी</option>
+                                        <option value="">पिता</option>
+                                        <option value="">मां</option>
+                                   </select>
+                              </td>
+                         </tr>
+
+                         <tr>
+                              <td class="td">
+                                   <p>संबंधी का नाम</p>
+                              </td>
+                              <td>
+                                   <input type="text" />
+                              </td>
+                         </tr>
+
+                         <tr>
+                              <td class="td">
+                                   <p>संबंधी का उपनाम</p>
+                              </td>
+                              <td>
+                                   <input type="text" />
+                              </td>
+                         </tr>
+
+                         <tr>
+                              <td class="td">
+                                   <p>श्रेणी</p>
+                              </td>
+                              <td>
+                                   <select class="select_gen">
+                                        <option value="">-----चयन-----</option>
+                                        <option value="">
+                                             अनुसूचित जनजाति
+                                        </option>
+                                        <option value="">अनुसूचित जाति</option>
+                                        <option value="">
+                                             अन्य पिछड़ा वर्ग (ओबीसी)
+                                        </option>
+                                        <option value="">सामान्य</option>
+                                   </select>
+                              </td>
+                         </tr>
+                    </table>
+
+                    <button class="age">
+                         आयु पैनल<span style="color: red">*</span>
+                    </button>
+                    <table class="table_4">
+                         <tr>
+                              <td class="td_age">
+                                   <p>जन्म तिथि</p>
+                              </td>
+                              <td>
+                                   <input style="width: 24%" type="date" />
+                              </td>
+                         </tr>
+
+                         <tr>
+                              <td class="td_age">
+                                   <p>आयु (वर्ष/महीना)</p>
+                              </td>
+                              <td>
+                                   <input style="width: 8%" type="text" />
+                                   <input style="width: 8%" type="text" />
+                              </td>
+                         </tr>
+
+                         <tr>
+                              <td class="td_age">
+                                   <p>जन्म का वर्ष</p>
+                              </td>
+                              <td>
+                                   <input type="text" />
+                              </td>
+                         </tr>
+
+                         <tr>
+                              <td class="td_age">
+                                   <p>आयु सीमा(से - तक)</p>
+                              </td>
+                              <td>
+                                   <input style="width: 8%" type="text" />
+                                   <input
+                                        style="width: 8%"
+                                        type="text" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                   <button>रीसेट करें</button>
+                              </td>
+                         </tr>
+                    </table>
+               </div>
+
+               <div class="div_2">
+                    <table class="table_5">
+                         <tr>
+                              <td class="td">
+                                   <p>वैवाहिक स्थिति</p>
+                              </td>
+                              <td>
+                                   <select style="width: 30%">
+                                        <option value="">-----चयन-----</option>
+                                        <option value="">अलग- अलग</option>
+                                        <option value="">अविवाहित</option>
+                                        <option value="">तलाकशुदा</option>
+                                        <option value="">लिव इन रिलेशन</option>
+                                        <option value="">विधवा">विधवा</option>
+                                        <option value="">विवाहित</option>
+                                   </select>
+                              </td>
+                         </tr>
+                         <tr>
+                              <td class="td">
+                                   <p>मोबाईल नंबर</p>
+                              </td>
+                              <td>
+                                   +<input
+                                        style="width: 10%"
+                                        type="text"
+                                        value="91" />
+                                   <input style="width: 18%" type="text" />
+                                   <button>सत्यापित करें</button>
+                              </td>
+                         </tr>
+                         <tr>
+                              <td class="td">
+                                   <p>लैंडलाइन नंबर</p>
+                              </td>
+                              <td>
+                                   +<input
+                                        style="width: 9%"
+                                        type="text"
+                                        value="91" />
+                                   <input style="width: 9%" type="text" />
+                                   <input style="width: 10%" type="text" />
+                              </td>
+                         </tr>
+                         <tr>
+                              <td class="td">
+                                   <p>ईमेल आईडी</p>
+                              </td>
+                              <td>
+                                   <input style="width: 31%" type="text" />
+                                   <button>सत्यापित करें</button>
+                              </td>
+                         </tr>
+                         <tr>
+                              <td class="td" style="height: 50px">
+                                   <p>क्या पीड़ित और शिकायतकर्ता एक ही हैं?</p>
+                              </td>
+                              <td>
+                                   <input type="checkbox" />
+                              </td>
+                         </tr>
+                    </table>
+               </div>
+          </div>
+          <button class="black_btn">रिक्त करें</button>
+     </body>
+</html>

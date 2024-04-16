@@ -1,0 +1,133 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.main_div{
+    width: 98%;
+    margin: auto;
+}
+.header{
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    /* grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); */
+    justify-content: space-between;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+    padding: 5px 20px;
+
+}
+.cctns_logo{
+    width: 20%;
+    /* border: 1px solid red; */
+}
+.cctns_logo img{
+    width: 70%;
+    height: 60px;
+}
+.user_data{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid green; */
+    font-size: 13px;
+    font-weight: 550;
+}
+.police_logo{
+    width: 40%;
+    /* border: 1px solid blue; */
+}
+.police_logo img{
+    width: 12%;
+    height: 60px;
+    float: right;
+
+}
+
+.main_link ul{
+list-style-type: none;
+display: flex;
+background-color: #235eaa;
+padding: 5px 0;
+outline: none;
+}
+.main_link ul li{
+    display: block;
+}
+.main_link ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 550;
+    padding: 5px 5px;
+    border-right: 1px solid white;
+
+}
+.main_link ul li a:hover{
+    text-decoration: underline;
+}
+
+.link_location{
+    width: 100%;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.link_location span:nth-child(1){
+    color: #235eaa;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid #0e3568;
+}
+.heading p:nth-child(1){
+    color: #235eaa;
+    font-size: 13px;
+    font-weight: 550;
+    margin: 5px 0;
+}
+.heading p:nth-child(2){
+    color: red;
+    font-size: 12px;
+    margin: 5px 0;
+
+}
+
+.main_tabe{
+margin-top: 10px;
+}
+.main_tabe a button{
+    background-color: #235eaa;
+    color: white;
+    font-size: 12px;
+    padding: 1px;
+    outline: none;
+    cursor: pointer;
+}
+
+.i_fram{
+    border: 1px solid gray;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    overflow-y: scroll;
+}
+
+.main_button{
+    text-align: center;
+    margin: 50px 0;
+}
+
+.main_button button{
+padding: 10px 15px;
+border: none;
+outline: none;
+border-radius: 20px;
+background-color: rgba(19, 107, 19, 0.927);
+color: white;
+}
