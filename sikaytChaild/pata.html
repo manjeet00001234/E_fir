@@ -1,103 +1,656 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            padding: 0%;
-            margin: 0%;
-            box-sizing: border-box;
-        }
-    </style>
-</head>
-<body>
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0" />
+          <title>Document</title>
+          <style>
+               * {
+                    padding: 0%;
+                    margin: 0%;
+                    box-sizing: border-box;
+               }
 
-    <div class="main_contaner">
-        <div class="sthai_pata">
-            <div class="sthai_pata_1">
-                <table>
-                    <p>स्थायी पता</p>
-                    <tr>
-                        <td><p>मकान सं</p></td>
-                        <td><input type="text"></td>
-                    </tr>
-                    <tr>
-                        <td><p>गली का नाम</p></td>
-                        <td><input type="text"></td>
-                    </tr>
-                    <tr>
-                        <td><p>कॉलोनी / इलाक़ा /क्षेत्र</p></td>
-                        <td><input type="text"></td>
-                    </tr>
-                    <tr>
-                        <td><p>ग्राम / नगर / शहर*</p></td>
-                        <td><input type="text"></td>
-                    </tr>
-                    <tr>
-                        <td><p>तहसील / ब्लॉक / मंडल</p></td>
-                        <td><input type="text"></td>
-                    </tr>
-                    <tr>
-                        <td><p>वर्तमान पता*</p></td>
-                        <td>वर्तमान के लिए भी वही
-                            <input type="radio" name="add" id="">हां
-                            <input type="radio" name="add" id=""> नहीं
-                        </td>
-                    </tr>
+               .main_contaner {
+                    width: 99%;
+                    margin: 20px auto;
+                    /* border: 1px solid red; */
+               }
+               .sthai_pata {
+                    display: flex;
+                    /* justify-content:space-between; */
+                    width: 100%;
+                    margin-bottom: 50px;
+               }
+               .sthai_pata_1 {
+                    /* border: 1px solid black; */
+                    width: 50%;
 
-                </table>
+               }
+               .sthai_pata_1 table tr td [type=text]{
+                /* border: 1px solid red; */
+                border: 1px solid #a3bfe3;;
+                outline: none;
+                resize: none;
 
-            </div>
-            <div class="sthai_pata_2">
-                <table>
-                <tr>
-                    <td><p>देश<span style="color: red;">*</span></p></td>
-                    <td><select>
-                        <option value="">भारत</option>
-                    </select>
-                </td>
-                </tr>
-                <tr>
-                    <td><p>राज्य<span style="color: red;">*</span></p></td>
-                    <td><select>
-                        <option value=""></option>
-                    </select>
-                </td>
-                </tr>
-                <tr>
-                    <td><p>जिला<span style="color: red;">*</span></p></td>
-                    <td><select>
-                        <option value=""></option>
-                    </select>
-                </td>
-                </tr>
-                <tr>
-                    <td><p>पुलिस स्टेशन</p></td>
-                    <td><select>
-                        <option value=""></option>
-                    </select>
-                </td>
-                </tr>
-                <tr>
-                    <td><p>पिन कोड</p></td>
-                    <td><select>
-                        <option value=""></option>
-                    </select>
-                </td>
-                </tr>
-                <tr>
-                    <td><p>देश<span style="color: red;">*</span></p></td>
-                    <td><select>
-                        <option value=""></option>
-                    </select>
-                </td>
-                </tr>
-                </table>
-            </div>
-        </div>
-    </div>
+               }
+               .sthai_pata_2 {
+                    /* border: 1px solid blue; */
+                    width: 50%;
+               }
+               .sthai_pata_2 table tr td [type=text]{
+                border: 1px solid #a3bfe3;;
+                outline: none;
+                resize: none;
+               }
+               .sthai_pata_2 table tr td select{
+                border: 1px solid #a3bfe3;
+                outline: none;
+                resize: none;
+                /* border: 1px solid red; */
+               }
+               .td {
+                    width: 60%;
+                    /* border: 1px solid gray; */
+                    background-color: #e0e6ff;
+                    font-size: 12px;
+                    padding: 2px;
+                    border: none;
+               }
 
-</body>
+               .btn{
+                color: #13376c;
+                    float: right;
+                    margin: 10px 5px 10px 0;
+               }
+
+               .blk_tbl{
+                width: 100%;
+                background-color: #2b6ac1;
+                color: white;
+                border-collapse: collapse;
+                border: 2px solid white;
+                margin: 50px 0;
+               }
+               .blk_tbl tr td{
+                padding: 8px 5px;
+
+               }
+               @media only screen and (max-width: 800px) {
+                    .sthai_pata {
+                         display: block;
+                    }
+                    .sthai_pata_1 {
+                         width: 100%;
+                    }
+                    .sthai_pata_2 {
+                         width: 100%;
+                    }
+               }
+          </style>
+     </head>
+     <body>
+          <div class="main_contaner">
+               <div class="sthai_pata">
+                    <div class="sthai_pata_1">
+                         <table>
+                              <p style="font-size: 12px">स्थायी पता</p>
+                              <tr>
+                                   <td class="td"><p>मकान सं</p></td>
+                                   <td><input type="text" value="22B" /></td>
+                              </tr>
+                              <tr>
+                                   <td class="td"><p>गली का नाम</p></td>
+                                   <td><input type="text" value="shiv" /></td>
+                              </tr>
+                              <tr>
+                                   <td class="td">
+                                        <p>कॉलोनी / इलाक़ा /क्षेत्र</p>
+                                   </td>
+                                   <td>
+                                        <input
+                                             type="text"
+                                             value="Choudhary colony" />
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td class="td">
+                                        <p>
+                                             ग्राम / नगर / शहर<span
+                                                  style="color: red"
+                                                  >*</span
+                                             >
+                                        </p>
+                                   </td>
+                                   <td>
+                                        <input type="text" value="Surajgarh" />
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td class="td">
+                                        <p>तहसील / ब्लॉक / मंडल</p>
+                                   </td>
+                                   <td>
+                                        <input type="text" value="Surajgarh" />
+                                   </td>
+                              </tr>
+
+                         </table>
+                    </div>
+
+                    <div class="sthai_pata_2">
+                         <table>
+                              <tr>
+                                   <td class="td">
+                                        <p>
+                                             देश<span style="color: red"
+                                                  >*</span
+                                             >
+                                        </p>
+                                   </td>
+                                   <td>
+                                        <select>
+                                             <option value="">भारत</option>
+                                        </select>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td class="td">
+                                        <p>
+                                             राज्य<span style="color: red"
+                                                  >*</span
+                                             >
+                                        </p>
+                                   </td>
+                                   <td>
+                                        <select>
+                                             <option value="">राजस्थान</option>
+                                        </select>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td class="td">
+                                        <p>
+                                             जिला<span style="color: red"
+                                                  >*</span
+                                             >
+                                        </p>
+                                   </td>
+                                   <td>
+                                        <select>
+                                             <option value="">झुँझुनू</option>
+
+                                             <option value="">हनुमानगढ़</option>
+                                             <option value="">सीकर</option>
+                                             <option value="">
+                                                  सी.आई.डी. सुरक्षा
+                                             </option>
+                                             <option value="">सिरोही</option>
+                                             <option value="">सांचौर</option>
+                                             <option value="">
+                                                  सवाई माधोपुर
+                                             </option>
+                                             <option value="">
+                                                  सलूम्&zwj;बर">सलूम्&zwj;बर
+                                             </option>
+                                             <option value="">शाहपुरा</option>
+                                             <option value="">
+                                                  शासकीय रेलवे पुलिस, अजमेर
+                                             </option>
+                                             <option value="">
+                                                  शासकीय रेलवे पुलिस जोधपुर
+                                             </option>
+                                             <option value="">भीलवाड़ा</option>
+                                             <option value="">भिवाड़ी</option>
+                                             <option value="">भरतपुर</option>
+                                             <option value="">
+                                                  ब्&zwj;यावर
+                                             </option>
+                                             <option value="">बूंदी</option>
+                                             <option value="">बालोतरा</option>
+                                             <option value="">बीकानेर</option>
+                                             <option value="">बाराँ</option>
+                                             <option value="">बाड़मेर</option>
+                                             <option value="">बांसवाड़ा</option>
+                                             <option value="">फलौदी</option>
+                                             <option value="">प्रतापगढ़</option>
+                                             <option value="">पाली</option>
+                                             <option value="">नागौर</option>
+                                             <option value="">
+                                                  नीम का थाना
+                                             </option>
+                                             <option value="">
+                                                  गंगापुर सिटी
+                                             </option>
+                                             <option value="">गंगा नगर</option>
+                                             <option value="">
+                                                  खैरथल-तिजारा
+                                             </option>
+                                             <option value="">कोटा शहर</option>
+                                             <option value="">
+                                                  कोटा ग्रामीण
+                                             </option>
+                                             <option value="">
+                                                  कोटपूतली-बहरोड़
+                                             </option>
+                                             <option value="">केकड़ी</option>
+                                             <option value="">करौली</option>
+                                             <option value="">
+                                                  एस सी आर बी, जयपुर सिटी
+                                             </option>
+                                             <option value="">
+                                                  एटीएस एवं एसओजी
+                                             </option>
+                                             <option value="">
+                                                  आयुक्तालय जयपुर
+                                             </option>
+                                             <option value="">
+                                                  आयुक्तालय जोधपुर
+                                             </option>
+                                             <option value="">उदयपुर</option>
+                                             <option value="">अलवर</option>
+                                             <option value="">अनूपगढ़</option>
+                                             <option value="">अजमेर</option>
+                                             <option value="">
+                                                  राजसमन्&zwj;द
+                                             </option>
+                                             <option value="">टोंक</option>
+                                             <option value="">नागौर</option>
+                                             <option value="">धौलपुर</option>
+                                             <option value="">दौसा</option>
+                                             <option value="">दूदू</option>
+                                             <option value="">डूंगरपूर</option>
+                                             <option value="">
+                                                  डीडवाना-कुचामन
+                                             </option>
+                                             <option value="">डीग</option>
+                                             <option value="">झुँझुनू</option>
+                                             <option value="">झालावाड़</option>
+                                             <option value="">
+                                                  जोधपुर सिटी पूर्व
+                                             </option>
+                                             <option value="">
+                                                  जोधपुर सिटी पश्चिम
+                                             </option>
+                                             <option value="">
+                                                  जोधपुर ग्रामीण
+                                             </option>
+                                             <option value="">जैसलमेर</option>
+                                             <option value="">जालोर</option>
+                                             <option value="">
+                                                  जयपुर सिटी
+                                             </option>
+                                             <option value="">
+                                                  जयपुर शहर (दक्षिण)
+                                             </option>
+                                             <option value="">
+                                                  जयपुर शहर (उत्तर)
+                                             </option>
+                                             <option value="">
+                                                  जयपुर मेट्रो
+                                             </option>
+                                             <option value="">
+                                                  जयपुर ग्रामीण
+                                             </option>
+                                        </select>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td class="td"><p>पुलिस स्टेशन</p></td>
+                                   <td>
+                                        <select>
+                                             <option value="">सुरजगढ़</option>
+
+                                             <option value="">
+                                                  कोतवाली झुन्&zwj;झुनू
+                                             </option>
+                                             <option value="">गुढा</option>
+                                             <option value="">गोठड़ा</option>
+                                             <option value="">चिड़ावा</option>
+                                             <option value="">धनूरी</option>
+                                             <option value="">नवलगढ़</option>
+                                             <option value="">पचेरीकलां</option>
+                                             <option value="">पिलानी</option>
+                                             <option value="">बगड़</option>
+                                             <option value="">बिसाऊ</option>
+                                             <option value="">बुहाना</option>
+                                             <option value="">मण्डावा</option>
+                                             <option value="">मण्ड्रेला</option>
+                                             <option value="">मलसीसर</option>
+                                             <option value="">
+                                                  महिला थाना(झुँझुनू)
+                                             </option>
+                                             <option value="">मुकन्दगढ़</option>
+                                             <option value="">
+                                                  सदर झुन्&zwj;झुनू
+                                             </option>
+                                             <option value="">
+                                                  साईबर पुलिस थाना(झुँझुनू)
+                                             </option>
+                                             <option value="">सिंघाना</option>
+                                             <option value="">सुरजगढ़</option>
+                                             <option value="">सुलताना</option>
+                                        </select>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td class="td"><p>पिन कोड</p></td>
+                                   <td><input type="text" value="333029"/></td>
+                              </tr>
+                              <tr>
+                                   <td class="td">
+                                        <p>
+                                             वर्तमान पता<span style="color: red"
+                                                  >*</span
+                                             >
+                                        </p>
+                                   </td>
+                                   <td style="font-size: 12px">
+                                        वर्तमान के लिए भी वही
+                                        <input
+                                             type="radio"
+                                             name="add"
+                                             id="" checked/>हां
+                                        <input type="radio" name="add" id="" />
+                                        नहीं
+                                   </td>
+                              </tr>
+                         </table>
+                    </div>
+               </div>
+
+               <!-- ***************************************************************************************** -->
+
+               <div class="sthai_pata">
+                    <div class="sthai_pata_1">
+                         <table>
+                              <p style="font-size: 12px">वर्तमान पता</p>
+                              <tr>
+                                   <td class="td"><p>मकान सं</p></td>
+                                   <td><input type="text" value="22B" /></td>
+                              </tr>
+                              <tr>
+                                   <td class="td"><p>गली का नाम</p></td>
+                                   <td><input type="text" value="shiv" /></td>
+                              </tr>
+                              <tr>
+                                   <td class="td">
+                                        <p>कॉलोनी / इलाक़ा /क्षेत्र</p>
+                                   </td>
+                                   <td>
+                                        <input
+                                             type="text"
+                                             value="Choudhary colony" />
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td class="td">
+                                        <p>
+                                             ग्राम / नगर / शहर<span
+                                                  style="color: red"
+                                                  >*</span
+                                             >
+                                        </p>
+                                   </td>
+                                   <td>
+                                        <input type="text" value="Surajgarh" />
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td class="td">
+                                        <p>तहसील / ब्लॉक / मंडल</p>
+                                   </td>
+                                   <td>
+                                        <input type="text" value="Surajgarh" />
+                                   </td>
+                              </tr>
+                              <!-- <tr>
+                                   <td class="td">
+                                        <p>
+                                             वर्तमान पता<span style="color: red"
+                                                  >*</span
+                                             >
+                                        </p>
+                                   </td>
+                                   <td style="font-size: 12px">
+                                        वर्तमान के लिए भी वही
+                                        <input
+                                             type="radio"
+                                             name="add"
+                                             id="" />हां
+                                        <input type="radio" name="add" id="" />
+                                        नहीं
+                                   </td>
+                              </tr> -->
+                         </table>
+                    </div>
+
+                    <div class="sthai_pata_2">
+                         <table>
+                              <tr>
+                                   <td class="td">
+                                        <p>
+                                             देश<span style="color: red"
+                                                  >*</span
+                                             >
+                                        </p>
+                                   </td>
+                                   <td>
+                                        <select>
+                                             <option value="">भारत</option>
+                                        </select>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td class="td">
+                                        <p>
+                                             राज्य<span style="color: red"
+                                                  >*</span
+                                             >
+                                        </p>
+                                   </td>
+                                   <td>
+                                        <select>
+                                             <option value="">राजस्थान</option>
+                                        </select>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td class="td">
+                                        <p>
+                                             जिला<span style="color: red"
+                                                  >*</span
+                                             >
+                                        </p>
+                                   </td>
+                                   <td>
+                                        <select>
+                                             <option value="">झुँझुनू</option>
+                                             <option value="">हनुमानगढ़</option>
+                                             <option value="">सीकर</option>
+                                             <option value="">
+                                                  सी.आई.डी. सुरक्षा
+                                             </option>
+                                             <option value="">सिरोही</option>
+                                             <option value="">सांचौर</option>
+                                             <option value="">
+                                                  सवाई माधोपुर
+                                             </option>
+                                             <option value="">
+                                                  सलूम्&zwj;बर">सलूम्&zwj;बर
+                                             </option>
+                                             <option value="">शाहपुरा</option>
+                                             <option value="">
+                                                  शासकीय रेलवे पुलिस, अजमेर
+                                             </option>
+                                             <option value="">
+                                                  शासकीय रेलवे पुलिस जोधपुर
+                                             </option>
+                                             <option value="">भीलवाड़ा</option>
+                                             <option value="">भिवाड़ी</option>
+                                             <option value="">भरतपुर</option>
+                                             <option value="">
+                                                  ब्&zwj;यावर
+                                             </option>
+                                             <option value="">बूंदी</option>
+                                             <option value="">बालोतरा</option>
+                                             <option value="">बीकानेर</option>
+                                             <option value="">बाराँ</option>
+                                             <option value="">बाड़मेर</option>
+                                             <option value="">बांसवाड़ा</option>
+                                             <option value="">फलौदी</option>
+                                             <option value="">प्रतापगढ़</option>
+                                             <option value="">पाली</option>
+                                             <option value="">नागौर</option>
+                                             <option value="">
+                                                  नीम का थाना
+                                             </option>
+                                             <option value="">
+                                                  गंगापुर सिटी
+                                             </option>
+                                             <option value="">गंगा नगर</option>
+                                             <option value="">
+                                                  खैरथल-तिजारा
+                                             </option>
+                                             <option value="">कोटा शहर</option>
+                                             <option value="">
+                                                  कोटा ग्रामीण
+                                             </option>
+                                             <option value="">
+                                                  कोटपूतली-बहरोड़
+                                             </option>
+                                             <option value="">केकड़ी</option>
+                                             <option value="">करौली</option>
+                                             <option value="">
+                                                  एस सी आर बी, जयपुर सिटी
+                                             </option>
+                                             <option value="">
+                                                  एटीएस एवं एसओजी
+                                             </option>
+                                             <option value="">
+                                                  आयुक्तालय जयपुर
+                                             </option>
+                                             <option value="">
+                                                  आयुक्तालय जोधपुर
+                                             </option>
+                                             <option value="">उदयपुर</option>
+                                             <option value="">अलवर</option>
+                                             <option value="">अनूपगढ़</option>
+                                             <option value="">अजमेर</option>
+                                             <option value="">
+                                                  राजसमन्&zwj;द
+                                             </option>
+                                             <option value="">टोंक</option>
+                                             <option value="">नागौर</option>
+                                             <option value="">धौलपुर</option>
+                                             <option value="">दौसा</option>
+                                             <option value="">दूदू</option>
+                                             <option value="">डूंगरपूर</option>
+                                             <option value="">
+                                                  डीडवाना-कुचामन
+                                             </option>
+                                             <option value="">डीग</option>
+                                             <option value="">झुँझुनू</option>
+                                             <option value="">झालावाड़</option>
+                                             <option value="">
+                                                  जोधपुर सिटी पूर्व
+                                             </option>
+                                             <option value="">
+                                                  जोधपुर सिटी पश्चिम
+                                             </option>
+                                             <option value="">
+                                                  जोधपुर ग्रामीण
+                                             </option>
+                                             <option value="">जैसलमेर</option>
+                                             <option value="">जालोर</option>
+                                             <option value="">
+                                                  जयपुर सिटी
+                                             </option>
+                                             <option value="">
+                                                  जयपुर शहर (दक्षिण)
+                                             </option>
+                                             <option value="">
+                                                  जयपुर शहर (उत्तर)
+                                             </option>
+                                             <option value="">
+                                                  जयपुर मेट्रो
+                                             </option>
+                                             <option value="">
+                                                  जयपुर ग्रामीण
+                                             </option>
+                                        </select>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td class="td"><p>पुलिस स्टेशन</p></td>
+                                   <td>
+                                        <select>
+                                             <option value="">सुरजगढ़</option>
+
+                                             <option value="">
+                                                  कोतवाली झुन्&zwj;झुनू
+                                             </option>
+                                             <option value="">गुढा</option>
+                                             <option value="">गोठड़ा</option>
+                                             <option value="">चिड़ावा</option>
+                                             <option value="">धनूरी</option>
+                                             <option value="">नवलगढ़</option>
+                                             <option value="">पचेरीकलां</option>
+                                             <option value="">पिलानी</option>
+                                             <option value="">बगड़</option>
+                                             <option value="">बिसाऊ</option>
+                                             <option value="">बुहाना</option>
+                                             <option value="">मण्डावा</option>
+                                             <option value="">मण्ड्रेला</option>
+                                             <option value="">मलसीसर</option>
+                                             <option value="">
+                                                  महिला थाना(झुँझुनू)
+                                             </option>
+                                             <option value="">मुकन्दगढ़</option>
+                                             <option value="">
+                                                  सदर झुन्&zwj;झुनू
+                                             </option>
+                                             <option value="">
+                                                  साईबर पुलिस थाना(झुँझुनू)
+                                             </option>
+                                             <option value="">सिंघाना</option>
+                                             <option value="">सुरजगढ़</option>
+                                             <option value="">सुलताना</option>
+                                        </select>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td class="td"><p>पिन कोड</p></td>
+                                   <td><input type="text" value="333029" /></td>
+                              </tr>
+                         </table>
+                    </div>
+               </div>
+
+               <button class="btn">सहेजे</button>
+               <button class="btn">रिक्त करें</button>
+
+
+               <table class="blk_tbl" border="1">
+<tr>
+    <td>
+क्र.सं</td>
+    <td>मकान सं</td>
+    <td>गली का नाम</td>
+    <td>कॉलोनी / इलाक़ा /क्षेत्र</td>
+    <td>ग्राम / नगर / शहर</td>
+    <td>तहसील / ब्लॉक / मंडल</td>
+    <td>देश</td>
+    <td>राज्य</td>
+    <td>जिला</td>
+    <td>पुलिस स्टेशन</td>
+    <td>पिन कोड</td>
+    <td>संशोधित करें</td>
+    <td>हटाएँ</td>
+</tr>
+               </table>
+          </div>
+     </body>
 </html>

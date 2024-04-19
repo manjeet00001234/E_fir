@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>pidit</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa adipisci cum laudantium illum totam magni hic consequatur minus a, quos eum, nesciunt quo vero ut ducimus praesentium ipsa qui et.
-    Non nesciunt quos laudantium, molestias quam ratione rem autem facilis eos, nulla qui nemo repellat similique a. Dolore, exercitationem? Quia dolorem praesentium nihil fugiat amet provident, voluptates quisquam numquam veritatis.</p>
-</body>
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0" />
+          <title>Document</title>
+          <style>
+               .main_contaner {
+                    width: 99%;
+                    margin: 20px auto;
+               }
+               .main_tbl {
+                    width: 100%;
+                    border-collapse: collapse;
+                    border: 2px solid white;
+                    margin: 50px 0;
+                    /* text-align: center; */
+               }
+
+
+               .main_tbl tr:nth-child(1) {
+                    background-color: #2b6ac1;
+                    height: 40px;
+                    color: white;
+                font-weight: 600;
+
+               }
+                .main_tbl tr:nth-child(2){
+                    background-color: rgba(128, 128, 128, 0.222);
+                    height: 30px;
+                }
+          </style>
+     </head>
+     <body>
+          <div class="main_contaner">
+               <table class="main_tbl" border="1">
+                    <tr>
+                         <td>क्र.सं</td>
+                         <td>नाम</td>
+                         <td>पता</td>
+                         <td>संशोधित करें/ देखें</td>
+                         <td>हटाएँ</td>
+                    </tr>
+                    <tr>
+                         <td>1</td>
+                         <td>manjeet singh</td>
+                         <td>
+                              00 raghunathpura raghunathpura raghunathpura
+                              surajgarh सुरजगढ़ झुँझुनू राजस्थान भारत
+                         </td>
+                         <td><img style="cursor: pointer;" src="./image/edit.png" alt="" /></td>
+                         <td style="cursor: pointer;">❌</td>
+                    </tr>
+               </table>
+               
+          </div>
+     </body>
 </html>

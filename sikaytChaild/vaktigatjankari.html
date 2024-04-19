@@ -13,19 +13,20 @@
                     box-sizing: border-box;
                }
                .contaner {
-                    width: 100%;
+                    width: 99%;
                     display: flex;
                     justify-content: space-between;
+                    height: 400px;
                     /* gap: 50px; */
                     /* border: 1px solid red; */
                }
                .div_1 {
-                    width: 50%;
+                    width: 49%;
                     /* border: 1px solid black; */
                }
 
                .div_2 {
-                    width: 50%;
+                    width: 49%;
                     /* border: 1px solid blue; */
                }
 
@@ -47,7 +48,7 @@
                }
                .table_1 {
                     margin: 10px;
-                    width: 100%;
+                    width: 90%;
                }
                .table_1 tr td input[type="text"][type="select"] {
                     border-color: #a3bfe3;
@@ -79,7 +80,7 @@
                }
                .table_3 {
                     margin: 20px;
-                    width: 100%;
+                    width: 90%;
                }
                .age {
                     margin: 0 0 0 20px;
@@ -92,36 +93,135 @@
                }
                .table_4 {
                     margin: 10px 0 0 20px;
-                    width: 100%;
+                    width: 90%;
                }
                .table_5 {
                     width: 40%;
                     margin: 70px 0 0 20px;
-                    width: 100%;
+                    width: 90%;
+               }
+               .table_5 tr td:nth-child(1){
+                    width: 20%;
+
+               }
+               .tbl_5_td{
+                    width: 30%;
                }
                .black_btn {
                     color: #13376c;
                     float: right;
-                    margin: 30px 20px 20px 0;
+                    /* margin: 30px 20px 20px 0; */
+                    margin-bottom: 0% !important;
+
                }
 
-               /* @media screen and (min-width:"220px") and (max-width:"440px") {
-                .contaner{
-                    width: 100%;
-                    display: block;
-                }
 
-               } */
+
+               .table_1 tr td select{
+                    border: 1px solid #a3bfe3;;
+                outline: none;
+                resize: none;
+               }
+
+               .table_1 tr td [type=text]{
+                    border: 1px solid #a3bfe3;;
+                outline: none;
+                resize: none;
+               }
+
+               .table_3 tr td select{
+                    border: 1px solid #a3bfe3;;
+                outline: none;
+                resize: none;
+               }
+
+               .table_3 tr td [type=text],[type=date]{
+                    border: 1px solid #a3bfe3;;
+                outline: none;
+                resize: none;
+               }
+
+               .table_4 tr td select{
+                    border: 1px solid #a3bfe3;;
+                outline: none;
+                resize: none;
+               }
+
+               .table_4 tr td [type=text]{
+                    border: 1px solid #a3bfe3;;
+                outline: none;
+                resize: none;
+               }
+
+               .tbl_4_td{
+                    width: 10%;
+               }
+
+               .table_5 tr td select{
+                    border: 1px solid #a3bfe3;;
+                outline: none;
+                resize: none;
+               }
+
+               .table_5 tr td [type=text]{
+                    border: 1px solid #a3bfe3;;
+                outline: none;
+                resize: none;
+               }
 
                @media only screen and (max-width: 800px) {
                     .contaner {
                          display: block;
                     }
                     .div_1{
-                        width: 100%;
+                        width: 90%;
                     }
                     .div_2{
-                        width: 100%;
+                        width: 90%;
+                    }
+                    .table_1{
+                         width: 100%;
+                    }
+                    .table_1 tr td:nth-child(1){
+                         width: 50%;
+                    }
+                    .table_2{
+                         width: 100%;
+                    }
+                    .table_3{
+                         width: 100%;
+                    }
+                    .table_3 tr td:nth-child(1){
+                         width: 50%;
+                    }
+                    .table_4{
+                         width: 100%;
+                    }
+                    .table_4 tr td:nth-child(1){
+                         width: 50%;
+                    }
+                    .table_4 tr td [type=date]{
+                         width: 50% !important;
+                    }
+
+                    .tbl_4_td{
+                         width: 30%;
+                    }
+
+                    .table_5{
+                         width: 100%;
+                    }
+                    .table_5 tr td:nth-child(1){
+                         width: 50%;
+                    }
+                    .tbl_5_td{
+                         width: 50%;
+                    }
+
+                    .black_btn{
+                         margin-top: 300px;
+                         margin-right: 10px;
+
                     }
                }
           </style>
@@ -138,7 +238,7 @@
                                    <select class="select_gen">
                                         <option value="">-----चयन-----</option>
                                         <option value="">अज्ञात</option>
-                                        <option value="">पुरुष</option>
+                                        <option value="" selected>पुरुष</option>
                                         <option value="">महिला</option>
                                         <option value="">
                                              हिजड़ा/किन्&zwj;नर
@@ -156,7 +256,7 @@
                                    </p>
                               </td>
                               <td>
-                                   <input type="text" />
+                                   <input type="text" value="manjeet"/>
                               </td>
                          </tr>
 
@@ -165,7 +265,7 @@
                                    <p>मध्य नाम</p>
                               </td>
                               <td>
-                                   <input type="text" />
+                                   <input type="text" value="singh" />
                               </td>
                          </tr>
 
@@ -174,7 +274,7 @@
                                    <p>अंतिम नाम</p>
                               </td>
                               <td>
-                                   <input type="text" />
+                                   <input type="text" value="Choudhary"/>
                               </td>
                          </tr>
 
@@ -219,7 +319,7 @@
                                    <select class="select_gen">
                                         <option value="">-----चयन-----</option>
                                         <option value="">संबंध प्रकार</option>
-                                        <option value="">अभिभावक</option>
+                                        <option value="" selected>अभिभावक</option>
                                         <option value="">पति</option>
                                         <option value="">पत्नी</option>
                                         <option value="">पिता</option>
@@ -257,7 +357,7 @@
                                              अनुसूचित जनजाति
                                         </option>
                                         <option value="">अनुसूचित जाति</option>
-                                        <option value="">
+                                        <option value="" selected>
                                              अन्य पिछड़ा वर्ग (ओबीसी)
                                         </option>
                                         <option value="">सामान्य</option>
@@ -275,7 +375,7 @@
                                    <p>जन्म तिथि</p>
                               </td>
                               <td>
-                                   <input style="width: 24%" type="date" />
+                                   <input style="width: 24%" type="date" value="20-05-1997" />
                               </td>
                          </tr>
 
@@ -284,8 +384,8 @@
                                    <p>आयु (वर्ष/महीना)</p>
                               </td>
                               <td>
-                                   <input style="width: 8%" type="text" />
-                                   <input style="width: 8%" type="text" />
+                                   <input class="tbl_4_td" type="text" value="25"/>
+                                   <input class="tbl_4_td" type="text" value="02"/>
                               </td>
                          </tr>
 
@@ -294,7 +394,7 @@
                                    <p>जन्म का वर्ष</p>
                               </td>
                               <td>
-                                   <input type="text" />
+                                   <input type="text" value="1997"/>
                               </td>
                          </tr>
 
@@ -303,10 +403,10 @@
                                    <p>आयु सीमा(से - तक)</p>
                               </td>
                               <td>
-                                   <input style="width: 8%" type="text" />
+                                   <input class="tbl_4_td" type="text" />
                                    <input
-                                        style="width: 8%"
-                                        type="text" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        class="tbl_4_td"
+                                        type="text" />
                                    <button>रीसेट करें</button>
                               </td>
                          </tr>
@@ -319,15 +419,15 @@
                               <td class="td">
                                    <p>वैवाहिक स्थिति</p>
                               </td>
-                              <td>
-                                   <select style="width: 30%">
+                              <td  class="tbl_5_td">
+                                   <select>
                                         <option value="">-----चयन-----</option>
                                         <option value="">अलग- अलग</option>
                                         <option value="">अविवाहित</option>
                                         <option value="">तलाकशुदा</option>
                                         <option value="">लिव इन रिलेशन</option>
                                         <option value="">विधवा">विधवा</option>
-                                        <option value="">विवाहित</option>
+                                        <option value="" selected>विवाहित</option>
                                    </select>
                               </td>
                          </tr>
@@ -339,8 +439,8 @@
                                    +<input
                                         style="width: 10%"
                                         type="text"
-                                        value="91" />
-                                   <input style="width: 18%" type="text" />
+                                        value="91"  />
+                                   <input class="tbl_5_td" type="text" value="9958468720"/>
                                    <button>सत्यापित करें</button>
                               </td>
                          </tr>
@@ -354,7 +454,7 @@
                                         type="text"
                                         value="91" />
                                    <input style="width: 9%" type="text" />
-                                   <input style="width: 10%" type="text" />
+                                   <input class="tbl_5_td" type="text" />
                               </td>
                          </tr>
                          <tr>
@@ -362,7 +462,7 @@
                                    <p>ईमेल आईडी</p>
                               </td>
                               <td>
-                                   <input style="width: 31%" type="text" />
+                                   <input class="tbl_5_td" type="text" />
                                    <button>सत्यापित करें</button>
                               </td>
                          </tr>
@@ -377,6 +477,9 @@
                     </table>
                </div>
           </div>
-          <button class="black_btn">रिक्त करें</button>
+
+          <div  class="black_btn">
+          <button>रिक्त करें</button>
+          </div>
      </body>
 </html>

@@ -48,9 +48,11 @@
 .main_link ul{
 list-style-type: none;
 display: flex;
+flex-wrap: wrap;
 background-color: #235eaa;
 padding: 5px 0;
 outline: none;
+gap: 10px;
 }
 .main_link ul li{
     display: block;
@@ -108,12 +110,15 @@ margin-top: 10px;
     padding: 1px;
     outline: none;
     cursor: pointer;
+    border: none;
 }
 
+
 .i_fram{
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
+    box-shadow: 0 0 0 rgba(218, 215, 215, 0.16), 0 0 0 rgba(205, 202, 202, 0.23);
     width: 100%;
-    height: 300px;
+    height: 400px;
     margin-top: 10px;
     overflow-y: scroll;
 }
@@ -130,4 +135,86 @@ outline: none;
 border-radius: 20px;
 background-color: rgba(19, 107, 19, 0.927);
 color: white;
+transition: all .5s ease-in-out;
+margin-left: 5px;
+}
+
+.main_button button:hover{
+transform: scale(1.05);
+background-color: #ff00ff;
+}
+.popap{
+    width: 30%;
+    height: auto;
+    margin: auto;
+box-shadow: 0px 25px 80px rgba(0, 0, 0, 0.5);
+    padding: 20px 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+
+}
+#pop{
+    display: none;
+}
+.popap h1{
+    border-bottom: 3px solid #35488e;
+    padding: 10px 0;
+    text-align: center;
+    color: #2a5eba;
+    font-weight: 600;
+
+}
+.popap p{
+    margin: 20px 0;
+    font-size: 15px;
+}
+.popap button{
+display: block;
+margin:50px auto;
+padding: 10px 30px;
+border-radius: 20px;
+color: white;
+background-color: green;
+border: none;
+outline: none;
+cursor: pointer;
+}
+
+
+
+@media screen and (max-width:800px) {
+    .cctns_logo{
+        width: 20%;
+
+margin-left: -20px;
+    }
+    .cctns_logo img{
+        width: 100%;
+        height: 20px;
+margin-top: 10px;
+    }
+.user_data{
+    width: 35%;
+}
+    .police_logo img{
+        height: 40px;
+        width: 50%;
+    }
+    .main_button button{
+margin-bottom: 20px;
+}
+.popap{
+    width: 80%;
+    /* margin-top: 90px; */
+    /* position: relative; */
+    /* margin-top: -180%; */
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 }

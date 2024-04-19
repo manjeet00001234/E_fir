@@ -4,13 +4,205 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        .main_contaner{
+            width: 95%;
+            margin:50px auto;
+            display: flex;
+
+        }
+
+        .tbl_1{
+            width: 40%;
+
+        }
+        .tbl_1 table tr td span{
+            color: red;
+        }
+
+        .tbl_1 table tr td [type=text]{
+            border: 1px solid #a3bfe3;;
+                outline: none;
+                resize: none;
+                padding: 0 10px;
+        }
+        .tbl_1 table tr td select{
+            border: 1px solid #a3bfe3;;
+                outline: none;
+                resize: none;
+                padding: 0 10px;
+                width: 60%;
+        }
+        .tbl_2{
+            width: 40%;
+
+        }
+        .tbl_2 table tr td span{
+            color: red;
+        }
+        .tbl_2 table tr td [type=text]{
+            border: 1px solid #a3bfe3;;
+                outline: none;
+                resize: none;
+                padding: 0 10px;
+        }
+        .tbl_2 table tr td select{
+            border: 1px solid #a3bfe3;;
+                outline: none;
+                resize: none;
+                padding: 0 10px;
+                width: 70%;
+        }
+        .td_1{
+            width: 50%;
+            /* width: 35%; */
+                    border: 1px solid gray;
+                    background-color: #e0e6ff;
+                    font-size: 12px;
+                    padding:10px 2px;
+                    border: none;
+        }
+
+        @media only screen and (max-width:800px) {
+        .main_contaner{
+            display: block;
+        }
+        .tbl_1{
+            width: 100%;
+        }
+        .tbl_2{
+            width: 100%;
+        }
+        .tbl_1 table tr td select{
+
+                width: 100%;
+        }
+        .tbl_2 table tr td select{
+            width: 100%;
+        }
+        }
+
+
+    </style>
 </head>
 <body>
-    <h1>vahanvivran</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, fuga neque pariatur harum enim et excepturi facere beatae voluptatibus soluta repellat corrupti? Quas optio eveniet dolores neque, dignissimos hic fuga!
-    Cumque dolorum autem temporibus voluptas dolorem, ipsa necessitatibus cum. Rerum et a facere, dolorem ullam assumenda earum! Officiis dolore magni architecto porro, fuga obcaecati sequi, aspernatur quas vero assumenda enim?
-    Fugit eligendi deleniti fuga illum hic aliquid molestiae explicabo dicta animi vitae. Fugit impedit accusamus omnis necessitatibus quidem pariatur vitae quos minus, voluptatibus perferendis ullam. Sit ad dolores saepe cumque.
-    Tenetur eos, delectus accusamus nesciunt deleniti quia quidem sint nisi veritatis veniam asperiores optio sunt et praesentium mollitia, aspernatur eaque ullam vitae impedit. Libero, laborum eligendi quisquam tempore omnis aut!
-    Quidem quam voluptates possimus aliquid explicabo quaerat incidunt similique qui, illo aut quae quia vitae, reprehenderit sapiente tenetur a suscipit ex perspiciatis dicta. Ea nobis aliquam ipsa, fuga soluta sit.</p>
+    <div class="main_contaner">
+        <div class="tbl_1">
+<table>
+    <tr>
+        <td class="td_1"><p>
+वाहन पंजीकरण संख्या<span>*</span></p></td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td class="td_1"><p>
+रंग</p></td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td class="td_1"><p>
+इंजन संख्या</p></td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td class="td_1"><p>
+विवरण</p></td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td class="td_1"><p>
+बीमा कंपनी<span>*</span></p></td>
+        <td>
+            <select name="" id="">
+                <option value="0">------------चयन-----------</option>
+                                        		  <option value="1">IFFCO TOKIO General Insurance Co. Ltd.</option>
+                                                 <option value="2">Liberty General Insurance Co. Ltd.</option>
+                                                 <option value="3">Shriram General Insurance Co. Ltd.</option>
+                                                 <option value="4">Reliance General Insurance Co.Ltd</option>
+                                                 <option value="5">DHFL General Insurance Co. Ltd</option>
+                                                 <option value="6">Bajaj Allianz Allianz General Insurance Co. Ltd</option>
+                                                 <option value="7">Edelweiss General Insurance Co. Ltd.</option>
+                                                 <option value="8">Kotak Mahindra General Insurance Co. Ltd.</option>
+                                                 <option value="9">Go Digit General Insurance Co. Ltd</option>
+                                                 <option value="10">Royal Sundaram General Insurance Co. Ltd.</option>
+                                                 <option value="11">Exports Credit Guarantee of India Co. Ltd</option>
+                                                 <option value="12">The New India Assurance Co. Ltd</option>
+                                                 <option value="13">Tata AIG General Insurance Company Limited</option>
+                                                 <option value="14">National Insurance Co. Ltd.</option>
+                                                 <option value="15">Universal Sompo General Insurance Co. Ltd.</option>
+                                                 <option value="16">Agriculture Insurance Company of India Ltd.</option>
+                                                 <option value="17">Acko General Insurance Co. Ltd.</option>
+                                                 <option value="18">SBI General Insurance Co. Ltd.</option>
+                                                 <option value="19">Bharti AXA General Insurance Co. Ltd.</option>
+                                                 <option value="20">ICICI LOMBARD General Insurance Co. Ltd.</option>
+                                                 <option value="21">Magma HDI General Insurance Co. Ltd.</option>
+                                                 <option value="22">HDFC ERGO General Insurance Co.Ltd.</option>
+                                                 <option value="23">United India Insurance Co. Ltd.</option>
+                                                 <option value="24">The Oriental Insurance Co. Ltd.</option>
+                                                 <option value="25">Future Generali India Insurance Co. Ltd.</option>
+                                                 <option value="26">Cholamandalam MS General Insurance Co. Ltd.</option>
+                                                 <option value="27">Raheja QBE General Insurance Co. Ltd.</option>
+                                                 <option value="28">Star Health &amp; Allied Insurance Co.Ltd.</option>
+                                                 <option value="29">Apollo Munich Health Insurance Co. Ltd</option>
+                                                 <option value="30">Religare Health Insurance Co. Ltd</option>
+                                                 <option value="31">Max Bupa Health Insurance Co. Ltd</option>
+                                                 <option value="32">CIGNA TTK Health Insurance Co. Ltd.</option>
+                                                 <option value="33">Aditya Birla Health Insurance Co. Ltd.</option>
+                                                 <option value="34">Vehicle not insured</option>
+            </select>
+        </td>
+    </tr>
+</table>
+        </div>
+        <div class="tbl_2">
+<table>
+    <tr>
+        <td class="td_1"><p>चेसिस नंबर</p></td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td class="td_1"><p>वाहन का प्रकार<span>*</span></p></td>
+        <td>
+            <select name="" id="">
+                <option value="0" title="-----चयन-----">-----चयन-----</option>
+                                               <option value="14" title="(मैक्सी) वैन / लौंग मल्टी परपज़ वैन">(मैक्सी) वैन / लौंग मल्टी परपज़ वैन</option><option value="35" title="एम्बुलेंस">एम्बुलेंस</option><option value="7" title="ऑटो इलेक्ट्रिक">ऑटो इलेक्ट्रिक</option><option value="8" title="ऑटो ट्रक (लोड ऑटो)">ऑटो ट्रक (लोड ऑटो)</option><option value="6" title="ऑटो रिक्शा (पैसेंजर)">ऑटो रिक्शा (पैसेंजर)</option><option value="11" title="कार">कार</option><option value="12" title="कार इलेक्ट्रिक / गोल्फ कार्ट">कार इलेक्ट्रिक / गोल्फ कार्ट</option><option value="13" title="जीप/स्मॉल वैन/मल्टी परपज़ वैन">जीप/स्मॉल वैन/मल्टी परपज़ वैन</option><option value="17" title="टिलर / मिनी ट्रैक्टर">टिलर / मिनी ट्रैक्टर</option><option value="29" title="ट्रेलर (इंजन के बिना)">ट्रेलर (इंजन के बिना)</option><option value="25" title="ट्रेलर ट्रक">ट्रेलर ट्रक</option><option value="21" title="ट्रैक्टर">ट्रैक्टर</option><option value="48" title="नाव">नाव</option><option value="15" title="बस">बस</option><option value="16" title="मिनी ट्रक">मिनी ट्रक</option><option value="10" title="मिनी वैन">मिनी वैन</option><option value="30" title="मिसलेनियस मोटर व्हीकल टाइप">मिसलेनियस मोटर व्हीकल टाइप</option><option value="43" title="मोटर बोट">मोटर बोट</option><option value="4" title="मोटर साइकिल">मोटर साइकिल</option><option value="1" title="मोपेड/पैडलयुक्त मोटर साइकिल">मोपेड/पैडलयुक्त मोटर साइकिल</option><option value="27" title="मोबाइल क्रेन लिफ्टर">मोबाइल क्रेन लिफ्टर</option><option value="18" title="मोबाइल फोर्क लिफ्टर">मोबाइल फोर्क लिफ्टर</option><option value="26" title="मोबाइल लोडर / एक्सकेवेटर/बुलडोजर">मोबाइल लोडर / एक्सकेवेटर/बुलडोजर</option><option value="50" title="रेल इंजन">रेल इंजन</option><option value="28" title="रोड लेवेलर / कौम्पैक्टर / कार्पेटर">रोड लेवेलर / कौम्पैक्टर / कार्पेटर</option><option value="19" title="रोड़ स्वीपर">रोड़ स्वीपर</option><option value="23" title="लाइट ट्रक (टेम्पो)">लाइट ट्रक (टेम्पो)</option><option value="47" title="विमान">विमान</option><option value="39" title="शिप/जहाज/पोत">शिप/जहाज/पोत</option><option value="46" title="साइकिल">साइकिल</option><option value="5" title="स्कूटर">स्कूटर</option><option value="2" title="स्कूट्रेट">स्कूट्रेट</option><option value="3" title="स्कूट्रेट इलेक्ट्रिक">स्कूट्रेट इलेक्ट्रिक</option><option value="49" title="स्टीमर">स्टीमर</option><option value="20" title="स्मॉल ट्रक/ लारी / मल्टी परपज़ व्हीकल">स्मॉल ट्रक/  लारी / मल्टी परपज़ व्हीकल</option><option value="22" title="हारवेस्टर ट्रैक्टर">हारवेस्टर ट्रैक्टर</option><option value="24" title="हैवी ट्रक">हैवी ट्रक</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="td_1"><p>निर्माता<span>*</span></p></td>
+        <td>
+            <select name="" id="">
+<option value="0" > -----चयन-----</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td class="td_1"><p>निर्माण वर्ष</p></td>
+        <td>
+            <select name="" id="">
+<option value="">-----चयन-----</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td class="td_1"><p>मॉडल</p></td>
+        <td>
+            <select name="" id="">
+<option value="">-----चयन-----</option>
+            </select>
+        </td>
+    </tr>
+
+
+</table>
+        </div>
+    </div>
 </body>
 </html>

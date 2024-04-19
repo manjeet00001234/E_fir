@@ -7,9 +7,10 @@
                content="width=device-width, initial-scale=1.0" />
           <title>E_Fir</title>
           <link rel="stylesheet" href="style.css" />
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
      </head>
      <body>
-          <div class="main_div">
+          <div class="main_div" id="main_div">
                <div class="header">
                     <div class="cctns_logo">
                          <img src="image/cctns_logo.png" alt="" />
@@ -23,8 +24,8 @@
 
                          <div>
                               <p>Manjeet</p>
-                              <p>14/04/2024</p>
-                              <p>10:15 am</p>
+                              <p  id="current_date"></p>
+                              <p  id="current_time"></p>
                          </div>
                     </div>
                     <div class="police_logo">
@@ -123,15 +124,15 @@
 
 
                <div class="main_tabe">
-                <a href="sikayat.html" target="ifram"><button>शिकायतकर्ता</button></a>
-                <a href="pidit.html" target="ifram"><button>पीड़ित सूचना</button></a>
-                <a href="ghtnasthal.html" target="ifram"><button>घटना – स्थल</button></a>
-                <a href="vahanvivran.html" target="ifram"><button>वाहन का विवरण</button></a>
+                <a href="sikayat.html" target="ifram"><button style="background-color: #f1c40f; color: black;" onclick="btn1()" id="bt_1">शिकायतकर्ता</button></a>
+                <a href="pidit.html" target="ifram" ><button onclick="btn2()"  id="bt_2">पीड़ित सूचना</button></a>
+                <a href="ghtnasthal.html" target="ifram" ><button onclick="btn3()"  id="bt_3">घटना – स्थल</button></a>
+                <a href="vahanvivran.html" target="ifram" ><button onclick="btn4()"  id="bt_4">वाहन का विवरण</button></a>
                </div>
 
 
 <div>
-<iframe  class="i_fram" src="sikayat.html" name="ifram" frameborder="0"></iframe>
+<iframe  class="i_fram" src="sikayat.html" name="ifram" ></iframe>
 </div>
 
 
@@ -140,5 +141,24 @@
 <a href=""><button>ई-एफ़.आई.आऱ  को एस.एच.ओ. को भेजने से पूर्व देखे</button></a>
 </div>
           </div>
+
+
+
+
+
+          <div class="popap" id="pop">
+               <h1>Disclaimer</h1>
+               <p>
+                    ई-एफआईआर की सुविधा मात्र वाहन चोरी की शिकायत दर्ज करने हेतु वैकल्पिक व्यवस्था के रूप में उपलब्ध करवाई गई हैं, बशर्ते कि :- (e-FIR facility has been provided as an alternative arrangement to lodge complaint regarding vehicle theft only,provided that:-)
+               </p>
+               <p>1.मुल्जिम अज्ञात हो | (Accused is unknown)</p>
+               <p>घटना के दौरान चोट / बल प्रयोग नहीं हुआ हो |(No use of force/injury during incident)</p>
+               <p>इस प्रकार की चोरी की घटना ,जिसमे मुल्जिम ज्ञात हो अथवा घटना के दौरान चोट /बल प्रयोग किया गया हो , की शिकायत संबंधित पुलिस थाने में ही दर्ज करवाई जा सकती है | (Theft complaint,where accused is known or there is use of force/injury,canbe lodged in respective Police Station only)</p>
+               <p>ई-एफआईआर की सुविधा का उपयोग करने हेतु शिकायतकर्त्ता के मोबाईल नम्बर एवं आधार नम्बर दर्ज करना अनिवार्य हैं क्योंकि ई -हस्ताक्षर की आवश्यकता होगी | (Mobile No. and Aadhar No.of complainant are mandatory for using services of e-FIR, As e signature is required)</p>
+               <p>ई-एफआईआर आमजन की सुविधा हेतु उपलब्ध करवाई गई है , गलत सुचना देने अथवा इस सुविधा के दुरूपयोग किये जाने की स्थिति में शिकायतकर्त्ता के विरुद्ध आईपीसी के तहत क़ानूनी कार्रवाई अमल में लाई जावेगी | (e-FIR facility has been provided to facilitate common people,incase of lodging malafide complaint or misuse of the facility,legal proceeding under IPC shall be initiated against the complainant)</p>
+
+               <button onclick="pop_bt()" >I AGREE</button>
+          </div>
      </body>
+     <script src="./script.js"></script>
 </html>

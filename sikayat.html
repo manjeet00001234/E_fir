@@ -14,19 +14,47 @@
         }
         .C_ifram{
             width: 100%;
-            height: 250px;
+            height: 350px;
         }
     </style>
 </head>
 <body>
     <div class="child_btn">
-        <a href="./sikaytChaild/vaktigatjankari.html" target="c_ifram"><button>व्यक्तिगत जानकारी</button></a>
-        <a href="./sikaytChaild/pata.html" target="c_ifram"><button>पता</button></a>
-        <a href="./sikaytChaild/anyejankari.html" target="c_ifram"><button>अन्य जानकारी</button></a>
+        <a href="./sikaytChaild/vaktigatjankari.html" target="c_ifram"><button style="background-color: #f1c40f; color: black;" onclick="btn_1()" id="bt1">व्यक्तिगत जानकारी</button></a>
+        <a href="./sikaytChaild/pata.html" target="c_ifram"><button onclick="btn_2()" id="bt2">पता</button></a>
+        <a href="./sikaytChaild/anyejankari.html" target="c_ifram"><button onclick="btn_3()" id="bt3">अन्य जानकारी</button></a>
     </div>
 
     <div >
         <iframe class="C_ifram" src="./sikaytChaild/vaktigatjankari.html" name="c_ifram" frameborder="0"></iframe>
     </div>
 </body>
+<script>
+    function btn_1(){
+        document.getElementById("bt1").style.backgroundColor="#f1c40f";
+        document.getElementById("bt2").style.backgroundColor="#235eaa";
+        document.getElementById("bt3").style.backgroundColor="#235eaa";
+        document.getElementById("bt1").style.color="black";
+        document.getElementById("bt2").style.color="#fff";
+        document.getElementById("bt3").style.color="#fff";
+    }
+
+        function btn_2(){
+        document.getElementById("bt1").style.backgroundColor="#235eaa";
+        document.getElementById("bt2").style.backgroundColor="#f1c40f";
+        document.getElementById("bt3").style.backgroundColor="#235eaa";
+            document.getElementById("bt1").style.color="#fff";
+        document.getElementById("bt2").style.color="black";
+        document.getElementById("bt3").style.color="#fff";
+    }
+
+        function btn_3(){
+        document.getElementById("bt1").style.backgroundColor="#235eaa";
+        document.getElementById("bt2").style.backgroundColor="#235eaa";
+        document.getElementById("bt3").style.backgroundColor="#f1c40f";
+            document.getElementById("bt1").style.color="#fff";
+        document.getElementById("bt2").style.color="#fff";
+        document.getElementById("bt3").style.color="black";
+    }
+</script>
 </html>
